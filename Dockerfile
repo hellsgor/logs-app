@@ -10,4 +10,6 @@ COPY . .
 ENV PORT=4200
 EXPOSE $PORT
 
+VOLUME ["/app/data/"]
+
 CMD [ "node", "app.js" ]
